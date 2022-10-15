@@ -1,0 +1,58 @@
+{
+	"info": {
+		"_postman_id": "1a0cb97e-1be2-4d83-8dac-976fa124d5d7",
+		"name": "currency-calculator",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getAllCurrency",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/exchange/all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"exchange",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getCurrency",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/exchange?origincurrency=PEN&finalcurrency=USD",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"exchange"
+					],
+					"query": [
+						{
+							"key": "origincurrency",
+							"value": "PEN"
+						},
+						{
+							"key": "finalcurrency",
+							"value": "USD"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
